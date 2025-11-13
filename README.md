@@ -22,11 +22,11 @@ uv run python main.py
 
 スクリプトは `get_embeddings()` で文章リストを API に送り、返ってきたベクトルを `numpy` 配列に格納します。その後 `cosine_similarity()` を使って基準文と他文の距離を計算し、似ている順に `[index] 類似度=... : 文` という形式で出力します。
 
-## simple_calc_cos.py（教育用の最小ステップ）
-`simple_calc_cos.py` は `main.py` よりさらにストレートな「1 ファイルで完結する」教材用スクリプトです。環境変数の読み込みから API 呼び出し、コサイン類似度の算出までを順番に追いながら学習できるよう、各ステップに丁寧なコメントを入れています。
+## cosine_similarity_basics.py（教育用の最小ステップ）
+`cosine_similarity_basics.py` は `main.py` よりさらにストレートな「1 ファイルで完結する」教材用スクリプトです。環境変数の読み込みから API 呼び出し、コサイン類似度の算出までを順番に追いながら学習できるよう、各ステップに丁寧なコメントを入れています。
 
 ```bash
-uv run python simple_calc_cos.py
+uv run python cosine_similarity_basics.py
 ```
 
 主なポイントは次のとおりです。
