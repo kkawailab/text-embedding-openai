@@ -1,7 +1,7 @@
 # text-embedding-openai
 
 ## 概要
-`main.py` は OpenAI の最新埋め込みモデル（デフォルトで `text-embedding-3-small`）を使って、指定した 11 文の意味的な近さを比較するシンプルなデモです。最初の文を基準ベクトルにし、残りの文とのコサイン類似度を計算して高い順にコンソールへ表示します。
+`main.py` は OpenAI の最新埋め込みモデル（デフォルトで `text-embedding-3-small`）を使って、指定した 11 文の意味的な近さを比較するシンプルなデモです。最初の文を基準ベクトルにし、残りの文とのコサイン類似度を計算して高い順にコンソールへ表示します。なお、初めてこのリポジトリに触れる方や初心者は、セットアップや概念の流れをまとめた `intro.md` を先に読むようにしてください。
 
 ## 依存関係と環境
 - Python 3.13 以上
@@ -48,6 +48,7 @@ uv run python print_embeddings.py
 - 類似度のしきい値を導入すれば、しきい値以上だけを抽出するフィルタリングのベースとして再利用できます。
 
 ## 更新履歴
+- （未リリース）初心者向けに `intro.md` を読む導線を README に追加
 - `86e87fa` Rename educational cosine script — 教材向けスクリプトのファイル名を分かりやすく整理
 - `a465508` Add beginner-focused cosine similarity script — ステップバイステップで学べる教育用スクリプトを追加
 - `596228e` Add embedding utilities and docs — 共通ユーティリティと README ドキュメントを拡充
