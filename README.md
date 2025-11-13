@@ -46,3 +46,9 @@ uv run python print_embeddings.py
 - モデル名（`model` 引数）を `text-embedding-3-large` などに変更可能です。
 - `sentences` リストを入れ替えるだけで任意の文集合に対してランキングを取得できます。
 - 類似度のしきい値を導入すれば、しきい値以上だけを抽出するフィルタリングのベースとして再利用できます。
+
+## 更新履歴
+- `86e87fa` Rename educational cosine script — 教材向けスクリプトのファイル名を分かりやすく整理
+- `a465508` Add beginner-focused cosine similarity script — ステップバイステップで学べる教育用スクリプトを追加
+- `596228e` Add embedding utilities and docs — 共通ユーティリティと README ドキュメントを拡充
+- `11be665` Add initial project files and configurations — 初期セットアップと主要スクリプトを配置
